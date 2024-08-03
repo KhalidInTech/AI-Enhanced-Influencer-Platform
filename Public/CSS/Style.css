@@ -1,0 +1,85 @@
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+
+:root {
+    --dark-navy: #10002b;
+    --dark-purple: #240046;
+    --midnight-purple: #3c096c;
+    --royal-purple: #5a189a;
+    --purple: #7b2cbf;
+    --light-purple: #9d4edd;
+    --lavender: #c77dff;
+    --light-lavender: #e0aaff;
+}
+
+.bg-dark-navy {
+    background-color: var(--dark-navy);
+}
+
+.bg-dark-purple {
+    background-color: var(--dark-purple);
+}
+
+.bg-midnight-purple {
+    background-color: var(--midnight-purple);
+}
+
+.bg-royal-purple {
+    background-color: var(--royal-purple);
+}
+
+.bg-purple {
+    background-color: var(--purple);
+}
+
+.bg-light-purple {
+    background-color: var(--light-purple);
+}
+
+.bg-lavender {
+    background-color: var(--lavender);
+}
+
+.bg-light-lavender {
+    background-color: var(--light-lavender);
+}
+
+.text-dark-navy {
+    color: var(--dark-navy);
+}
+
+.text-dark-purple {
+    color: var(--dark-purple);
+}
+
+.text-midnight-purple {
+    color: var(--midnight-purple);
+}
+
+.text-royal-purple {
+    color: var(--royal-purple);
+}
+
+.text-purple {
+    color: var(--purple);
+}
+
+.text-light-purple {
+    color: var(--light-purple);
+}
+
+.text-lavender {
+    color: var(--lavender);
+}
+
+.text-light-lavender {
+    color: var(--light-lavender);
+}
+
+/*Blurred Effect*/
+.modal-background {
+    transition: filter 0.3s;
+}
+
+.blurred {
+    filter: blur(5px);
+}

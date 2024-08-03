@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer Marketing Platform</title>
+    <link href="/Public/CSS/Style.css" rel=Stylesheet >
+    <link href="/Public/JS/Main.js" rel=Script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <div class="modal-background">
+        <header class="bg-white p-4 shadow">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="text-lg font-bold text-dark-purple">CollabWise</div>
+                <nav class="space-x-4">
+                    <a href="#home" class="text-gray-700 hover:text-dark-purple">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-dark-purple">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-dark-purple">About</a>
+                    <a href="#insights" class="text-gray-700 hover:text-dark-purple">Insights</a>
+                    <a href="#login" class="text-gray-700 hover:text-dark-purple">Login</a>
+                    <a href="#signup" class="text-gray-700 hover:text-dark-purple">Sign Up</a>
+                </nav>
+            </div>
+        </header>
+    
+        <main class="container mx-auto mt-6 space-y-12">
+            <!-- Home Section -->
+            <section id="home" class="bg-white p-8 rounded shadow-lg">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-dark-purple">Welcome to CollabWise</h2>
+                        <button class="bg-royal-purple text-white py-2 px-4 rounded hover:bg-midnight-purple" onclick="toggleModal('loginModal')">Login</button>
+                        <button class="bg-royal-purple text-white py-2 px-4 rounded hover:bg-midnight-purple ml-2" onclick="toggleModal('signupModal')">Sign Up</button>
+                    </div>
+                    <img src="https://via.placeholder.com/300" alt="Placeholder Image" class="rounded">
+                </div>
+            </section>
+    
+            <!-- Diversity of Influencers Section -->
+            <section id="influencers" class="bg-white p-8 rounded shadow-lg">
+                <h2 class="text-2xl font-bold mb-6 text-dark-purple">Diversity of Influencers</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <!-- Example Card -->
+                    <div class="bg-gray-100 p-4 rounded shadow hover:shadow-lg transition-shadow duration-300">
+                        <img src="https://via.placeholder.com/150" alt="Influencer" class="w-full h-32 object-cover rounded">
+                        <div class="mt-4 text-center">
+                            <h4 class="text-lg font-bold text-dark-purple">Influencer 1</h4>
+                        </div>
+                    </div>
+                    <!-- More cards... -->
+                </div>
+            </section>
+    
+            <!-- Services Section -->
+            <section id="services" class="bg-white p-8 rounded shadow-lg">
+                <h2 class="text-2xl font-bold mb-6 text-dark-purple">Services</h2>
+                <ul class="list-disc pl-6">
+                    <li class="mb-2">Influencer Discovery</li>
+                    <li class="mb-2">Campaign Management</li>
+                    <li class="mb-2">Content Scheduling</li>
+                    <li class="mb-2">Performance Analytics</li>
+                    <li class="mb-2">AI-driven Insights</li>
+                </ul>
+            </section>
+    
+            <!-- Benefits Section -->
+            <section id="benefits" class="bg-white p-8 rounded shadow-lg">
+                <h2 class="text-2xl font-bold mb-6 text-dark-purple">Benefits</h2>
+                <ul class="list-disc pl-6">
+                    <li class="mb-2">Access to a wide range of influencers</li>
+                    <li class="mb-2">Efficient campaign management</li>
+                    <li class="mb-2">Data-driven decision making</li>
+                    <li class="mb-2">Enhanced engagement and reach</li>
+                </ul>
+            </section>
+    
+            <!-- Types of Influencers Section -->
+            <section id="types-of-influencers" class="bg-white p-8 rounded shadow-lg">
+                <h2 class="text-2xl font-bold mb-6 text-dark-purple">What Types of Influencers Can Trust Us</h2>
+                <p>We cater to a diverse group of influencers across various niches, including fashion, technology, lifestyle, and more. Our platform is designed to support influencers at every stage of their career.</p>
+            </section>
+    
+            <!-- Target Audience Section -->
+            <section id="target-audience" class="bg-white p-8 rounded shadow-lg">
+                <h2 class="text-2xl font-bold mb-6 text-dark-purple">Our Target Audience</h2>
+                <p>Our platform is designed for brands, marketing agencies, and influencers looking to maximize their reach and engagement through effective influencer marketing strategies.</p>
+            </section>
+    
+            <!-- Process Section -->
+            <section id="process" class="bg-white p-8 rounded shadow-lg">
+                <h2 class="text-2xl font-bold mb-6 text-dark-purple">Our Process</h2>
+                <ol class="list-decimal pl-6">
+                    <li class="mb-2">Sign Up and Create a Profile</li>
+                    <li class="mb-2">Search and Discover Influencers</li>
+                    <li class="mb-2">Plan and Launch Campaigns</li>
+                    <li class="mb-2">Monitor Performance</li>
+                    <li class="mb-2">Receive AI-driven Insights</li>
+                </ol>
+            </section>
+        </main>
+    
+        <footer class="bg-white p-4 shadow mt-12">
+            <div class="container mx-auto text-center text-gray-600">
+                &copy; 2024 CollabWise. All rights reserved.
+            </div>
+        </footer>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white p-8 rounded shadow-lg w-1/3">
+            <h2 class="text-2xl font-bold mb-4 text-dark-purple">Login</h2>
+            <form>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Email</label>
+                    <input type="email" class="w-full p-2 border border-gray-300 rounded mt-2">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Password</label>
+                    <input type="password" class="w-full p-2 border border-gray-300 rounded mt-2">
+                </div>
+                <button type="button" class="bg-royal-purple text-white py-2 px-4 rounded hover:bg-midnight-purple">Login</button>
+                <button type="button" class="ml-2 bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-700" onclick="toggleModal('loginModal')">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div id="signupModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white p-8 rounded shadow-lg w-1/3">
+            <h2 class="text-2xl font-bold mb-4 text-dark-purple">Sign Up</h2>
+            <form>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Name</label>
+                    <input type="text" class="w-full p-2 border border-gray-300 rounded mt-2">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Email</label>
+                    <input type="email" class="w-full p-2 border border-gray-300 rounded mt-2">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Password</label>
+                    <input type="password" class="w-full p-2 border border-gray-300 rounded mt-2">
+                </div>
+                <button type="button" class="bg-royal-purple text-white py-2 px-4 rounded hover:bg-midnight-purple">Sign Up</button>
+                <button type="button" class="ml-2 bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-700" onclick="toggleModal('signupModal')">Cancel</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="/Public/JS/Main.js"></script>
+</body>
+
+</html>
+
+
+</html>

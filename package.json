@@ -1,0 +1,12 @@
+{
+  "name": "ai-enhanced-influencer-platform",
+  "version": "1.0.0",
+  "description": "The Influencer Marketing Platform will be a web-based application accessible via desktop \r and mobile devices. It will utilize AI for influencer discovery and insights, provide robust \r tools for campaign and content management, and offer detailed analytics for performance \r tracking",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
