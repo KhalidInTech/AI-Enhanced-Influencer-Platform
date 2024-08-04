@@ -1,85 +1,109 @@
-@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+/* styles.css */
+@import 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css';
 
 :root {
-    --dark-navy: #10002b;
-    --dark-purple: #240046;
-    --midnight-purple: #3c096c;
-    --royal-purple: #5a189a;
-    --purple: #7b2cbf;
-    --light-purple: #9d4edd;
-    --lavender: #c77dff;
-    --light-lavender: #e0aaff;
+    --russian-violet: #10002bff;
+    --russian-violet-2: #240046ff;
+    --persian-indigo: #3c096cff;
+    --tekhelet: #5a189aff;
+    --french-violet: #7b2cbfff;
+    --amethyst: #9d4eddff;
+    --heliotrope: #c77dffff;
+    --mauve: #e0aaffff;
 }
 
-.bg-dark-navy {
-    background-color: var(--dark-navy);
+.bg-russian-violet {
+    background-color: var(--russian-violet);
 }
 
-.bg-dark-purple {
-    background-color: var(--dark-purple);
+.text-russian-violet {
+    color: var(--russian-violet);
 }
 
-.bg-midnight-purple {
-    background-color: var(--midnight-purple);
+.text-heliotrope {
+    color: var(--heliotrope);
 }
 
-.bg-royal-purple {
-    background-color: var(--royal-purple);
+.text-french-violet {
+    color: var(--french-violet);
 }
 
-.bg-purple {
-    background-color: var(--purple);
+.bg-tekhelet {
+    background-color: var(--tekhelet);
 }
 
-.bg-light-purple {
-    background-color: var(--light-purple);
+.bg-persian-indigo {
+    background-color: var(--persian-indigo);
 }
 
-.bg-lavender {
-    background-color: var(--lavender);
+.bg-french-violet {
+    background-color: var(--french-violet);
 }
 
-.bg-light-lavender {
-    background-color: var(--light-lavender);
+.hover\:bg-persian-indigo:hover {
+    background-color: var(--persian-indigo);
 }
 
-.text-dark-navy {
-    color: var(--dark-navy);
+.hover\:bg-amethyst:hover {
+    background-color: var(--amethyst);
 }
 
-.text-dark-purple {
-    color: var(--dark-purple);
+.hover\:text-tekhelet:hover {
+    color: var(--tekhelet);
 }
 
-.text-midnight-purple {
-    color: var(--midnight-purple);
+.rounded-elegant {
+    border-radius: 8px;
 }
 
-.text-royal-purple {
-    color: var(--royal-purple);
+.transition-elegant {
+    transition: all 0.3s ease-in-out;
 }
 
-.text-purple {
-    color: var(--purple);
+/* Additional styles for navbar responsiveness and hover effect */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.text-light-purple {
-    color: var(--light-purple);
+nav ul li {
+    margin: 0 10px;
 }
 
-.text-lavender {
-    color: var(--lavender);
+nav ul li a {
+    color: var(--russian-violet);
+    transition: color 0.3s ease;
 }
 
-.text-light-lavender {
-    color: var(--light-lavender);
+nav ul li a:hover {
+    color: var(--tekhelet);
 }
 
-/*Blurred Effect*/
-.modal-background {
-    transition: filter 0.3s;
+/* Ensure navbar is responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-.blurred {
-    filter: blur(5px);
+/* Modal background blur */
+.hidden {
+    display: none;
+}
+
+.blur-background {
+    filter: blur(5px); 
+}
+
+/* Background Image */
+.bg-subtle-pattern {
+    background-color: #e0aaffff;
+    background-image: url('https://transparenttextures.com/patterns/brushed-alum-dark.png');
+}
+
+/* Section Spacing */
+.section-spacing {
+    margin: 4rem 4rem 4rem 4rem;
 }
